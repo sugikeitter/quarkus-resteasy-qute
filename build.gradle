@@ -12,6 +12,9 @@ dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-resteasy-reactive-qute'
     implementation 'io.quarkus:quarkus-arc'
+    implementation platform('software.amazon.awssdk:bom:2.17.155')
+    implementation 'software.amazon.awssdk:sqs'
+    implementation 'software.amazon.awssdk:lambda'
     testImplementation 'io.quarkus:quarkus-junit5'
 }
 
